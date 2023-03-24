@@ -50,8 +50,12 @@ footer {
 .button1 {
     color: var(--main-color-purpleLight);
     background-color: var(--main-color-black);
-    font-size: 50px;
+    font-size: 30px;
+    border-radius: 45px;
+    padding: 12px;
+    margin: 5px;
 }
+
 
 .btn {
     border-radius: 50%;
