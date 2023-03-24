@@ -33,6 +33,15 @@ p {
     font-size: 25px;
 }
 
+button {
+    font-weight: bold;
+    font-size: 55px;
+    padding: 20px;
+    color: var(--main-color-purpleLight);
+    background-color: var(--main-color-black);
+    border-radius: 15px;
+}
+
 footer {
     background-color: var(--main-color-black);
     height: 200px;
@@ -44,10 +53,19 @@ footer {
     font-size: 50px;
 }
 
+.btn {
+    border-radius: 50%;
+    border: ;
+}
+
 .navbar-brand {
-    height: 150px;
-    width: 150px;
+    height: 280px;
+    width: 280px;
     
+}
+
+.nav-item:hover {
+    color: red;
 }
 
 .buttonSearch{
