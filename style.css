@@ -1,8 +1,47 @@
+:root {
+    --main-color-black: #100E0E;
+    --main-color-purple: #5A3E51;
+    --main-color-purpleLight: #D9DAFF;
+    
+}
+
+#article {
+    height: 500px;
+    border-radius: 30px;
+    background-color: #5A3E51;
+ 
+}
+
+body {
+    background-color: var(--main-color-purpleLight);
+}
+
+
 nav {
-    background-color: #100E0E;
+    width: 100%;
+    background-color: var(--main-color-black);
     color: #D9DAFF;
-    height: 100px;
+    height: 200px;
+    font-size: 45px;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+p {
     font-size: 25px;
+}
+
+footer {
+    background-color: var(--main-color-black);
+    height: 200px;
+}
+
+.button1 {
+    color: var(--main-color-purpleLight);
+    background-color: var(--main-color-black);
+    font-size: 50px;
 }
 
 .navbar-brand {
@@ -14,6 +53,24 @@ nav {
 .buttonSearch{
     margin-right: 500px
 }
+
+.carouselExampleCaptions {
+    height: 100px;
+}
+
+.carou {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.yo {
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+
 
 @media screen and (max-width: 991px) {
 
