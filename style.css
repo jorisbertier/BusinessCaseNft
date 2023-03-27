@@ -25,44 +25,32 @@ nav {
     
 }
 
+#article {
+    height: 500px;
+    border-radius: 30px;
+    background-color: #5A3E51;
+ 
+}
+
 body {
-    background-color: var(--main-color-purpleLight) !important;
-    font-family: 'Lexend', sans-serif;
+    background-color: var(--main-color-purpleLight);
 }
 
 
 nav {
     width: 100%;
     background-color: var(--main-color-black);
-    color: var(--main-color-purpleLight);
+    color: #D9DAFF;
     height: 200px;
     font-size: 45px;
 }
 
-
-nav button i {
-    margin-left: 30px;
-    font-size: 50px;
-}
-
-div h1 {
-    font-weight: bold;
-    font-size: 100px ;
-}
-
-div h3 {
-    color: var(--main-color-purpleLight);
-    font-size: 50px;
-}
-
-div i {
-   font-size: 60px;
-   color: white;
-   letter-spacing: 20px;
+h1 {
+    font-weight: 800;
 }
 
 p {
-    font-size: 50px;
+    font-size: 25px;
 }
 
 button {
@@ -76,36 +64,6 @@ button {
 
 footer {
     background-color: var(--main-color-black);
-    color:var(--main-color-purpleLight);
-    height: 200px;
-}
-
-footer div {
-    background-color: var(--main-color-black);
-}
-
-footer p {
-    font-size: 30px;
-}
-
-div img {
-    border-radius: 30px 30px 0 0;
-}
-
-#actualite {
-    height: 900px;
-    width: 95%;
-    border-radius: 30px;
-    background-color: #5A3E51;
- 
-}
-
-#article {
-    width: 95%;
-    
-}
-
-.article1 {
     height: 200px;
 }
 
@@ -121,7 +79,7 @@ div img {
 
 .btn {
     border-radius: 50%;
-    border: 30px;
+    border: ;
 }
 
 .navbar-brand {
@@ -133,19 +91,6 @@ div img {
 .nav-item:hover {
     color: red;
 }
-
-h2 {
-    margin-left: 30px !important;
-    margin-top: 55px !important;
-    font-size: 60px !important;
-    font-weight: bold !important;
-    font-family: 'Lexend', sans-serif !important;
-}
-
-.h1 {
-    font-size: 500px;
-}
-
 
 .buttonSearch{
     margin-right: 500px
@@ -167,73 +112,7 @@ h2 {
     border-radius: 25px;
 }
 
-.imgActu {
-    height: 400px;
-    border-radius: 30px;
-}
 
-.card-img-top {
-    object-fit: cover;
-    height: 500px;
-}
-
-.card {
-    border-color: black;
-    border-radius: 55px;
-    border-style: solid;
-    border-width: 1px;
-    width: 100%;
-
-
-    transition: 0.5s ease-in-out;
-    border-radius: 30px!important;
-    
-    
-
-}
-.card:hover {
-   
-    transform: scaleY(1.1);
-    border: 3px solid;
-}
-
-.test {
-    width: 95%;
-}
-
-.eth {
-    width: 25px;
-    height: 50px;
-}
-
-.carousel {
-    width: 100%;
-    height: 300px;
-}
-
-
-.carousel-item img {
-    max-width: auto;
-    height: 500px;
-    border-radius: 30px;
-    object-fit: cover;
-}
-
-.carousel-inner {
-    hei
-}
-
-#carouselExampleCaptions {
-    width: 100%;
-    height: auto;
-    border-radius: 100px;
-    margin-top: 250px;
-}
-
-#carouselExampleControlsNoTouching {
-    width: auto;
-    height: auto;
-}
 
 @media screen and (max-width: 991px) {
 
@@ -257,20 +136,3 @@ h2 {
         
     }
 }
-
-
-.nav-item::after{
-    content:'';
-    display:block;
-    width:0px;
-    height:2px;
-    background:var(--main-color-purple);
-
-    transition: 0.2s;
-}
-
-.nav-item:hover::after{
-    width:100%;
-}
-
-.navbar-dark .navbar-nav .active > .nav-link, -dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
