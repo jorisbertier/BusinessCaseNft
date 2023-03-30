@@ -203,6 +203,24 @@ h2 {
     hei
 }
 
+.textChange:after {
+    color: #A883BA;
+    content: 'MANGA';
+    animation: text 10s ease-out infinite;
+}
+
+@keyframes text {
+    25% {
+        content: 'FUTUR'
+    }
+    50% {
+        content: 'ART';
+    }
+    75% {
+        content: 'META'.
+    }
+}
+
 #carouselExampleCaptions {
     width: 100%;
     height: auto;
