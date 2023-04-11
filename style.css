@@ -7,7 +7,7 @@
 
 
 body {
-    background-color: var(--main-color-black) !important;
+    background-color: var(--main-color-purpleLight) !important;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -19,7 +19,7 @@ nav {
     color: var(--main-color-purpleLight);
     display: flex !important;
     align-items: center !important;
-    border-bottom: 1px solid var(--main-color-purpleLight);
+    box-shadow: 10px 5px 5px grey;
     margin-bottom: 0px;
 }
 
@@ -52,19 +52,19 @@ div h1 {
     font-weight: bold;
     font-size: 60px ;
 }
+
 h2 {
-    color: var(--main-color-purpleLight);
-    margin-left: 30px ;
+    color: var(--main-color-black);
     margin-top: 55px !important;
-    font-size: 27px !important;
-    font-weight: bold !important;
+    font-size: 30px !important;
+    font-weight: 900 !important;
     font-family: 'Lexend', sans-serif !important;
 }
 
 
-div h3 {
+h3 {
     color: var(--main-color-purpleLight);
-    font-size: 50px;
+    font-size: 25px !important;
 }
 
 div i {
@@ -84,6 +84,13 @@ button {
     color: var(--main-color-purpleLight);
     background-color: var(--main-color-black);
     border-radius: 15px;
+}
+
+/* TABLE */
+
+.tableCollection {
+    display: flex;
+    justify-content: center;
 }
 
 table {
@@ -151,7 +158,7 @@ footer h4 {
     color: grey;
 }
 
-/*OFFCANVA*/
+/*OFFCANVAS*/
 
 .offcanvas {
     display: flex;
@@ -187,6 +194,7 @@ footer h4 {
 /* CONTENU HIDDEN DESKTOP & VISIBLE MOBILE*/
 
 .textHidden {
+    color: #100E0E;
     visibility: hidden;
     height: 0px;
 }
@@ -205,22 +213,37 @@ footer h4 {
     
 }
 
-
-
 .article1 {
     height: 200px;
 }
 
 .button1 {
-
     color: var(--main-color-purpleLight);
     background-color: var(--main-color-black) !important;
+    opacity: 0.8 !important;
     font-size: 20px;
-    border-radius: 20px;
-    padding: 7px;
+    border-radius: 17px;
+    padding: 15px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid var(--main-color-black);
+    
+}
+
+.buttonCategorie {
+    color: var(--main-color-purpleLight);
+    background-color: var(--main-color-black) !important;
+    font-size: 15px;
+    border-radius: 17px;
+    padding: 10px;
     margin: 5px;
     width: 150px;
-    border: 1px solid var(--main-color-purpleLight);
+    transition: 0.5s ease-in-out !important;
+    opacity: 0.8 !important;
+}
+
+.buttonCategorie:hover, .button1:hover {
+    opacity: 1 !important;
 }
 
 
@@ -329,7 +352,7 @@ footer h4 {
 
 .card2 img {
     border-radius: 30px 30px 0 0;
-    height: auto;
+    height: 250px;
 }
 
 .card2 .card-img-top {
@@ -369,10 +392,14 @@ footer h4 {
     object-fit: cover;
 }
 
+.textChange:after{
+    color: var(--main-color-purpleLight);
+    content: 'MANGA';
+    animation: text 10s ease-out infinite;
+}
 
-
-.textChange:after {
-    color: #A883BA;
+.textChange1:after {
+    color: var(--main-color-purple);
     content: 'MANGA';
     animation: text 10s ease-out infinite;
 }
@@ -380,6 +407,7 @@ footer h4 {
 /* CONTENU CACHEE DESKTOP & TABLET */
 
 .textMobile {
+    
     visibility: hidden;
     height: 0;
 }
@@ -555,11 +583,11 @@ footer h4 {
     }
     .textHidden {
         visibility: visible;
-        color: var(--main-color-purpleLight);
+        color: var(--main-color-black);
         text-align: center;
         margin-top: 170px;
         font-weight: bold;
-        font-size: 35px;
+        font-size: 40px;
     }
 
     #actualite1 {
@@ -599,8 +627,54 @@ footer h4 {
     .card p {
         font-size: 10px;
     }
-    
+    /* TABLE */
 
+    table th {
+        font-size: 14px;
+        
+    }
+    table p {
+        font-size: 10px;
+    }
+    table span, table button {
+        font-size: 9px !important;
+    }
+    table tr {
+        height: 60px;
+    }
+    table td {
+        
+        font-size: 10px;
+    }
+    table img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    table th {
+        font-size: 8px;
+    }
+    table p {
+        font-size: 6px;
+    }
+    table span, table button {
+        font-size: 6px !important;
+    }
+    table tr {
+        height: 50px;
+    }
+    table td {
+        
+        font-size: 6px;
+    }
+    table img {
+        width: 25px !important;
+        height: 25px !important;
+    }
 
 }
 
@@ -623,13 +697,3 @@ footer h4 {
 
 /*test modal*/
 
-.t {
-    
-    background-color: red !important;
-    margin-top: 50px;
-}
-
-.rrr {
-    font-size: 50px !important;
-    color: white !important;
-}
