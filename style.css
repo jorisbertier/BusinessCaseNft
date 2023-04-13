@@ -50,7 +50,7 @@ nav img {
 
 div h1 {
     font-weight: bold;
-    font-size: 60px ;
+    font-size: 48px !important;
 }
 
 h2 {
@@ -68,9 +68,9 @@ h3 {
 }
 
 div i {
-   font-size: 60px;
-   color: white;
-   letter-spacing: 20px;
+    font-size: 60px;
+    color: white;
+    letter-spacing: 20px;
 }
 
 p {
@@ -142,7 +142,7 @@ footer h4 {
     font-size: 20px !important;
 }
 
-
+/*ACTUALITE DESKTOP */
 
 #actualite {
     margin-top: 0px;
@@ -156,6 +156,11 @@ footer h4 {
 #actualite p {
     font-size: 15px;
     color: grey;
+}
+
+.imgActu1 {
+    
+    border-radius: 30px;
 }
 
 /*OFFCANVAS*/
@@ -227,7 +232,6 @@ footer h4 {
     margin: 5px;
     width: 200px;
     border: 1px solid var(--main-color-black);
-    
 }
 
 .buttonCategorie {
@@ -244,6 +248,7 @@ footer h4 {
 
 .buttonCategorie:hover, .button1:hover {
     opacity: 1 !important;
+    
 }
 
 
@@ -288,11 +293,6 @@ footer h4 {
 }
 
 
-.imgActu1 {
-    height: 400px;
-    border-radius: 30px;
-}
-
 /*GERER CONTENU CARD*/
 .card h5 {
     font-weight: bold;
@@ -323,25 +323,24 @@ footer h4 {
     border-radius: 30px 30px 0 0;
     max-width: auto;
     height: 350px;
-       
 }
 
 .card1 .card-img-top {
     object-fit: cover;
     height: 224px;
-   
 }
 
 
 .card1 .card-text {
-   font-size: 10px;
-   
+    font-size: 10px;
+
 }
 
 .card:hover {
-   cursor: pointer;
-    /*transform: translateY(20px);
-    border: 1px solid;*/
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 200ms ease-in-out;
+    border: 1px solid;
 }
 
 /*CARD ARTICLE*/
@@ -438,23 +437,22 @@ footer h4 {
 
 /* MEDIA QUERIES */
 
+
+
+
 @media screen and (max-width: 1900px) {
     .imgActu1 {
-        height: 350px;
+        height: 200px;
     }
-    
 }
+
 @media screen and (max-width: 1700px) {
     .imgActu1 {
         height: 300px;
     }
     
-    #actualite h1 {
-        font-size: 45px;
-    }
-
     #actualite h3 {
-        font-size: 35px;
+        font-size: 40px;
     }
     #actualite {
         height: 550px;
@@ -466,40 +464,63 @@ footer h4 {
     footer h4 {
         font-size: 30px;
     }
+    
 }
 
 
 @media screen and (max-width: 1470px) {
     .imgActu1 {
-        height: 250px;
+        height: 230px;
     }
+    .card h5 {
+        font-size: 16px;
+    }
+    .card h6 {
+        font-size: 11px;
+        color: grey;
+    }
+    .card p {
+        font-size: 11px;
+    }
+
+    
 }
 
 @media screen and (max-width: 1200px) {
 
     #actualite {
-        height: 400px;
+        height: 350px;
     }
     .imgActu1 {
-        height: 200px;
+        height: 180px;
     }
 
-    #actualite h1 {
-        font-size: 30px;
-    }
-
-    #actualite h3 {
-        font-size: 20px;
-    }
     #actualite button {
-        width: 120px;
+        width: 100px;
         font-size: 20px;
+        height: 40px;
+    }
+    #actualite h1 {
+        font-size: 30px !important;
+    }
+    #actualite h3 {
+        font-size: 25px!important;
+    }
+    .button1 {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        font-size: 10px !important;
+        width: 105px !important;
+    }
+    .textActu {
+        font-size: 12px !important;
     }
     nav img {
         width: 60px !important;
         height: 60px !important
     }
-    
+
 }
 
 
@@ -524,25 +545,67 @@ footer h4 {
     /*CAROUSEL ACTUALITE*/
 
     #actualite {
-        height: 270px;
+        height: 300px;
     }
 
     .imgActu1 {
-        height: 125px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 150px;
     }
 
     #actualite h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #actualite h3 {
+        font-size: 20px !important;
+    }
+    .button1 {
+        font-size: 10px !important;
+        width: 120px;
+    }
+    
+    .imgActu1 {
+        height: 180px;
+    }
+    /*CARD */
+
+    .card h5 {
+        font-size: 20px;
+    }
+    .card h6 {
+        font-size: 15px;
+        color: grey;
+    }
+    .card p {
         font-size: 15px;
     }
 
+    
+}
+@media screen and (max-width: 870px) {
+    .imgActu1 {
+        height: 150px;
+    }
 
+}
+
+
+@media screen and (max-width: 750px) {
+    #actualite {
+        height: 300px;
+    }
+
+    .imgActu1 {
+        height: 120px;
+    }
+
+    #actualite h1 {
+        font-size: 22px !important;
+    }
+
+    #actualite h3 {
+        font-size: 18px !important;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -556,18 +619,11 @@ footer h4 {
         font-size: 20px;
         height: 150px;
         margin-top: 0px;
-       
-    }
-
-    .carouselTest {
-       visibility:;
-        height: 50px;
     }
 
     .card1 {
         margin-bottom: 20px;
         height: 320px;
-        display: flex;
         overflow-x: auto;
     }
 
@@ -618,15 +674,7 @@ footer h4 {
     h2 {
         font-size: 20px !important;
     }
-    .card h5 {
-        font-size: 15px;
-    }
-    .card h6 {
-        font-size: 10px;
-    }
-    .card p {
-        font-size: 10px;
-    }
+
     /* TABLE */
 
     table th {
@@ -677,6 +725,23 @@ footer h4 {
     }
 
 }
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    /*CARD */
+
+    .card h5 {
+        font-size: 15px;
+    }
+    .card h6 {
+        font-size: 10px;
+        color: grey;
+    }
+    .card p {
+        font-size: 10px;
+    }
+}
 
 
 .nav-item::after{
@@ -696,4 +761,3 @@ footer h4 {
 .navbar-dark .navbar-nav .active > .nav-link, -dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
 
 /*test modal*/
-
