@@ -18,122 +18,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 </head>
 
 <body>
-
-    <!-- NAVBAR-->
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark position-fixed z-index:fixed">
-            <div class="container-fluid">
-                <a href="#"><img class="navbar-brand" src="./img/logoFutur-removebg-preview (1).png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <!-- container -->
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/logoFutur-removebg-preview (1).png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <input type='checkbox' id='toggle-menu' />
+                    <label type="button" class='toggle-btn' for='toggle-menu'>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </label>
                 </button>
-                
-                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Rechercher des collections..." aria-label="Search">
-                    </form>
-                    <ul class="navbar-nav" class="mr-lg-5">
+                <div class="collapse navbar-collapse">
+                    <!-- ms-auto -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-                        </li>
-                        <li class="nav-item" class="ml-1">
-                            <a class="nav-link" href="#">Wallet</a>
+                            <a class="nav-link active" aria-current="page" href="#">DASHBOARD</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Galerie</a>
+                            <a class="nav-link" href="#">WALLET</a>
                         </li>
-                        <!--OFFCANVAS RIGHT PROFIL-->
                         <li class="nav-item">
-                            <button class="btn" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                            <i class="bi bi-person-circle"></i></button>
-
-                            <div class="offcanvas offcanvas-end text-center w-25" tabindex="-1" id="offcanvasRight"
-                                aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                    <form>
-                                        <h4 class="mt-5">Connexion :</h4><br>
-                                        <!-- Email input -->
-                                        <div class="form-outline mb-4">
-                                            <input type="email" id="form2Example1" class="form-control" placeholder="Adresse email...">
-                                            
-                                        </div>
-
-                                        <!-- Password input -->
-                                        <div class="form-outline mb-4">
-                                            <input type="password" id="form2Example2" class="form-control" placeholder="Mot de passe...">
-                                            
-                                        </div>
-
-                                        <!-- 2 column grid layout for inline styling -->
-                                        <div class="row mb-1">
-                                            <div class="col d-flex justify-content-center">
-                                                <!-- Checkbox -->
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked>
-                                                    <label class="form-check-label" for="form2Example31"> Se souvenir
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <div class="col">
-                                                <!-- Simple link -->
-                                                <a href="#!">Mot de passe oublié?</a>
-                                            </div>
-                                        </div>
-                                            
-                                        
-
-                                        <!-- Submit button -->
-                                        <div class="text-center">
-                                            <button type="button"
-                                                class="btn btn-primary btn-block mb-4">Connexion</button>
-                                        </div>
-                                        <!-- Register buttons -->
-                                        <div class="text-center">
-                                            <p>Pas membre? <a href="#!">Inscrivez-vous</a></p>
-                                            <p>ou se connecter via:</p>
-                                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </button>
-
-                                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                                <i class="fab fa-google"></i>
-                                            </button>
-
-                                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                                <i class="fab fa-twitter"></i>
-                                            </button>
-
-                                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                                <i class="fab fa-github"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-
-                                </div>
-                            </div>
-
+                            <a class="nav-link" href="#">GALLERIE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-moon"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                INSCRIPTION
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">MESSAGE</a></li>
+                                <li><a class="dropdown-item" href="#">NEWS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">CANDIDATURE</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+<!-- MODAL NAVBAR -->
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/logo.png" alt="Logo">
+                    </div>
+                    <div class="modal-body">
+                        <!-- ms-auto -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-users"></i> ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-folder-open"></i> CASES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-tags"></i> PRICING</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-reply-all"></i> CONTACT
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">MESSAGE</a></li>
+                                    <li><a class="dropdown-item" href="#">NEWSLETTER</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">WORK WITH US</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><label for='toggle-menu'>Close</label></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- ARTICLE AVEC CAROUSEL DESKTOP-->
+<!-- VISIBLE CAROUSEL DESKTOP/ HIDDEN MOBILE-->
 
     <div class="container-fluid mx-auto d-flex justify-content-center align-items-center gx-lg-3 gx-md-2" id="actualite">
         <div class="row w-100 gx-lg-3 gx-y">
@@ -163,7 +150,8 @@
         </div>
     </div>
 
-    <!-- HIDDEN CAROUSEL-->
+<!-- HIDDEN CAROUSEL DESKTOP/ VISIBLE MOBILE-->
+
     <h1 class="textHidden">NFT MARKETPLACE<br><span class="textChange1"></span></h1>
     <div class="container-fluid mx-auto d-flex justify-content-center align-items-center gx-5" id="actualite1">
         <div class="row w-100">
@@ -199,7 +187,7 @@
     
 
 
-    <!-- CARD CONTENT -->
+<!-- CARD CONTENT -->
 
     <h2 class="mb-5 ms-3">Sélection du moment</h2>
 
@@ -314,7 +302,9 @@
         </div>
     </div>
     <button type="submit" class="buttonCategorie mt-5 ms-3">VOIR CATÉGORIE</button>
-    <!--CARD CONTENT 2-->
+
+<!--CARD CONTENT 2-->
+
     <h2 class="mb-5 ms-3">Collection naruto</h2>
 
     <div class="row mx-auto gy-md-4 gy-sm-5">
@@ -428,7 +418,8 @@
         </div>
     </div>
     <button type="submit" class="buttonCategorie mt-5 ms-3">VOIR CATÉGORIE</button>
-    <!--ARTICLE A LIRE -->
+
+<!--ARTICLE A LIRE -->
 
     <h2 class="mt-5 mb-5 ms-3">Articles</h2>
     <div class="container-fluid mx-auto my-5">
@@ -469,98 +460,7 @@
         </div>
     </div>
 
-    <!-- TEST-->
-
-    <!--<div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
-        <div class="carousel-inner w-100">
-            <div class="carousel-item active">
-                <div class="col-md-3">
-                    <div class="card card-body">
-                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=1">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="col-md-3">
-                    <div class="card card-body">
-                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=2">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="col-md-3">
-                    <div class="card card-body">
-                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=3">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="col-md-3">
-                    <div class="card card-body">
-                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=4">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="col-md-3">
-                    <div class="card card-body">
-                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=5">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="col-md-3">
-                    <div class="card card-body">
-                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=6">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="col-md-3">
-                    <div class="card card-body">
-                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=7">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="col-md-3">
-                    <div class="card card-body">
-                        <img class="img-fluid" src="https://via.placeholder.com/640x360?text=8">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>-->
-
-    <!-- ARTICLE AVEC CAROUSEL-->
-    <div class="container-fluid mx-auto mt-5 d-flex justify-content-center mt-5 align-items-center gx-lg-3 gx-md-2" id="actualite">
-        <div class="row w-100 gx-lg-3">
-
-            <div class="col-lg-6 col-md-3 col-6 ps-5 pt-5 ">
-                <h1>NFT MARKETPLACE<br><span class="textChange"></span></h1>
-                <h3>Le futur est à porté de main</h3>
-                <button type="submit" class="button1">Explore</button>
-            </div>
-            <div class="col-lg-2 col-md-3 col-2 d-flex justify-content-center align-items-center">
-                <img src="./img/itachi.webp" class="imgActu1" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="col-lg-2 col-md-3 col-2 d-flex justify-content-center align-items-center">
-                <img src="./img/itachi.webp" class="imgActu1" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="col-lg-2 col-md-3  col-2 d-flex justify-content-center align-items-center">
-                <img src="./img/itachi.webp" class="imgActu1" class="d-block w-100 h-100" alt="...">
-            </div>
-        </div>
-    </div>
-
-    <!--TABLEAU -->
+<!--TABLEAU -->
 
     <div class="container tableCollection mt-5">
     <table class="table align-middle rounded mb-0">
@@ -730,7 +630,8 @@
         </tbody>
       </table>
     </div>
-    <!-- FOOTER-->
+
+<!-- FOOTER-->
 
     <footer>
         <div class="container-fluid">
