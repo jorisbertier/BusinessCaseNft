@@ -2,12 +2,14 @@
     --main-color-black: #100E0E;
     --main-color-purple: #5A3E51;
     --main-color-purpleLight: #D9DAFF;
+    --main-color-background: rgb(217,217,255);
+    --main-color-title : #000000;
     
 }
 
 
 body {
-    background-color: var(--main-color-purpleLight) !important;
+    background-color: var(--main-color-background) !important;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -22,7 +24,11 @@ nav {
 }
 
 .nav-link:hover {
-    color: var(--main-color-purple) !important;
+    color: var(--main-color-black) !important;
+    background-color: var(--main-color-purple);
+    border-radius: 20px !important;
+    transition: 600ms;
+    
 }
 
 
@@ -32,6 +38,7 @@ nav {
     margin-left: 30px;
     position: relative;
     color: var(--main-color-purpleLight);
+    border-radius: 20px !important;
 }
 
 .navbar .navbar-brand img{
@@ -177,7 +184,7 @@ h1 {
 }
 
 h2 {
-    color: var(--main-color-black);
+    color: var(--main-color-title);
     margin-top: 55px !important;
     font-size: 30px !important;
     font-weight: 900 !important;
@@ -248,7 +255,7 @@ footer div {
     background-color: var(--main-color-black);
 }
 
-footer p {
+footer p, footer span {
     font-weight: 500;
     font-size: 12px !important;
 }
@@ -289,7 +296,7 @@ footer h4 {
 /* CONTENU HIDDEN DESKTOP & VISIBLE MOBILE*/
 
 .textHidden {
-    color: #100E0E;
+    color: var(--main-color-title) !important;
     visibility: hidden;
     height: 0px;
 }
@@ -340,6 +347,7 @@ footer h4 {
 
 .buttonCategorie:hover, .button1:hover {
     opacity: 1 !important;
+    transition: 600ms;
     
 }
 
@@ -384,6 +392,7 @@ footer h4 {
 }
 
 .card1 {
+    
     border-color: black;
     border-radius: 55px;
     border-style: solid;
@@ -416,7 +425,7 @@ footer h4 {
 .card:hover {
     cursor: pointer;
     transform: scale(1.05);
-    transition: 200ms ease-in-out;
+    transition: 500ms;
     border: 1px solid;
 }
 
@@ -668,7 +677,7 @@ footer h4 {
         height: 200px;
         
     } 
-    
+
 }
 @media screen and (max-width: 870px) {
     #actualite h1 {
@@ -679,9 +688,17 @@ footer h4 {
         height: 160px !important;
         max-width: 100px;
     }
+    .sombre {
+        text-align: start !important;
+    }
 
 }
 
+@media screen and (max-width :767px) {
+    .sombre {
+        text-align: center !important;
+    }
+}
 
 @media screen and (max-width: 750px) {
     #actualite {
