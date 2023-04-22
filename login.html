@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion & Inscription</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="formSignIn">
+
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+              <div class="heading">
+                <h2>Content de vous revoir !</h2>
+                <h6>Pas encore inscrit?</h6>
+                <a href="#" class="toggle">S'inscrire</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Pseudo/email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Mot de passe</label>
+                </div>
+
+                <input type="submit" value="Connexion" class="sign-btn" />
+                <div class="changeTheme">Switch le theme</div>
+                <p class="text">
+                  Mot de passe oublié?
+                  <a href="#">Obtenir de l'aide</a> pour se connecter
+                </p>
+              </div>
+            </form>
+
+            <!-- INSCRIPTION -->
+            <form action="index.html" method="POST" autocomplete="off" id="signUpForm" class="sign-up-form">
+              <div class="heading">
+                <h2>S'inscrire</h2>
+                <h6>Tu as déja un compte?</h6>
+                <a href="#" class="toggle">Connecte toi</a>
+              </div>
+
+              <!-- nom -->
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input type="text" name="nom" minlength="3" class="input-field" autocomplete="off">
+                  <label for="nom">Nom</label>
+                </div>
+                <small></small>
+
+                <!-- prenom -->
+                <div class="input-wrap">
+                  <input type="text" name="prenom" minlength="3" class="input-field" autocomplete="off">
+                  <label for="prenom">Prénom</label>
+                </div>
+                <small></small>
+
+                <!-- pseudo -->
+                <div class="input-wrap">
+                  <input type="text" name="pseudo" minlength="3" class="input-field" autocomplete="off">
+                  <label for="pseudo">Nom d'utilisateur</label>
+                </div>
+                <small></small>
+
+                <!-- email -->
+                <div class="input-wrap">
+                  <input type="email" name="email" class="input-field" autocomplete="off"/>
+                  <label for="email">Email</label>
+                  
+                </div>
+                <small></small>
+
+                <!-- mot de passe -->
+                <div class="input-wrap">
+                  <input type="text" name="password" minlength="4" class="input-field" autocomplete="off"/>
+                  <label for="password">Mot de passe</label>
+                </div>
+                <small></small>
+
+                <!-- confirmation mot de passe -->
+                <div class="input-wrap">
+                  <input type="password" name="confirmPassword" minlength="4" class="input-field" autocomplete="off"/>
+                  <label for="confirmPassword">Confirmer mot de passe</label>
+                </div>
+                <small></small>
+
+                <!-- boutton envoyer -->
+                <input type="submit" value="S'inscrire" class="sign-btn" />
+
+                <!-- conditions et politiques -->
+                <p class="text">
+                  En m'inscrivant, j'accepte les
+                  <a href="#">Conditions d'utiliations</a> et
+                  <a href="#">la Politique de confidentilité</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./img/image1.png" class="image img-1 show" alt="" />
+              <img src="./img/image2.png" class="image img-2" alt="" />
+              <img src="./img/image3.png" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Découvre des milliers de NFT</h2>
+                  <h2>Connecte ton wallet</h2>
+                  <h2>Rejoignez la communnauté</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
