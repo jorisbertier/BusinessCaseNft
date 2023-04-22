@@ -127,6 +127,7 @@ nav {
 
 .modal-dialog .modal-content{
     background-color: var(--main-color-purple);
+    
 }
 
 .modal-dialog .modal-header, .modal-dialog .modal-footer{
@@ -147,6 +148,7 @@ nav {
     font-size: 18px;
     margin-bottom: 30px;
     color: var(--main-color-purpleLight);
+    border-radius: 20px !important;
 }
 
 .modal-dialog .nav-link i {
@@ -334,8 +336,8 @@ footer h4 {
 }
 
 .buttonCategorie {
-    color: var(--main-color-purpleLight);
-    background-color: var(--main-color-black) !important;
+    color: var(--main-color-background);
+    background-color: var(--main-color-title) !important;
     font-size: 15px;
     border-radius: 17px;
     padding: 10px;
@@ -542,6 +544,7 @@ footer h4 {
     #actualite h3 {
         font-size: 40px;
     }
+    
     footer p, footer i {
         font-size: 25px;
     }
@@ -697,6 +700,10 @@ footer h4 {
 @media screen and (max-width :767px) {
     .sombre {
         text-align: center !important;
+        margin-bottom: 10px;
+    }
+    .credit {
+        margin-bottom: 10px;
     }
 }
 
