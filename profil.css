@@ -1,0 +1,34 @@
+.menuProfil {
+    margin-top: 100px;
+    color: white;
+}
+
+.menuProfilTitle {
+    margin-top: 15px !important;
+}
+
+body {
+    background-color: #D9DAFF !important;
+    color: black;
+}
+
+.sidebar {
+    background-color: black;
+}
+
+ul li span, ul li a{
+    color : white !important;
+}
+
+span {
+    color: white;
+}
+
+ul li i {
+    margin-right: 10px;
+}
+
+ul li:hover {
+    background-color: grey;
+    
+}

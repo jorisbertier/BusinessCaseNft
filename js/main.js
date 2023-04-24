@@ -10,8 +10,8 @@ switchThemeBtn.addEventListener('click', ()=> {
     toggleTheme++;
 
   } else {
-    document.documentElement.style.setProperty('--main-color-background', '--main-color-background');
-    document.documentElement.style.setProperty('--main-color-title', '--main-color-title');
+    document.documentElement.style.setProperty('--main-color-background', '#D0D1FB');
+    document.documentElement.style.setProperty('--main-color-title', '#000000');
     toggleTheme--;
 
   }
