@@ -1,27 +1,45 @@
-.menuProfil {
-    margin-top: 100px;
-    color: white;
-}
-
-.menuProfilTitle {
-    margin-top: 15px !important;
-}
-
 body {
     background-color: #D9DAFF !important;
     color: black;
+    width: 100%;
 }
 
-.sidebar {
-    background-color: black;
+h1 {
+    font-size: 45px !important;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 1.4em !important;
+    color: #D9DAFF;
+}
+
+hr {
+    height: 2px !important;
+    color: black !important;
 }
 
 ul li span, ul li a{
     color : white !important;
 }
 
-span {
-    color: white;
+input {
+    width: auto;
+}
+
+small {
+    font-size: 16px !important;
+    font-weight: 400;
+    color: #D9DAFF;
+}
+
+span small {
+    color:#D9DAFF;
+}
+
+label, input {
+    color: #D9DAFF;
+    font-weight: 400;
 }
 
 ul li i {
@@ -31,4 +49,102 @@ ul li i {
 ul li:hover {
     background-color: grey;
     
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    width: 80% !important;
+}
+
+.menuProfil {
+    margin-top: 100px;
+    
+}
+
+.menuProfil, .menuList {
+    color: #5A3E51;
+    font-size: 24px;
+}
+
+.menuProfilTitle {
+    margin-top: 15px !important;
+}
+
+
+.sidebar {
+    background-color: black;
+    width: auto;
+}
+
+.blocProfil {
+    background-color: #5A3E51;
+    border-radius: 25px;
+}
+
+
+.bloc1 {
+    margin-top: 96px ;
+}
+.bloc2 {
+    margin-top: 96px ;
+   
+}
+
+.consignePassword {
+    padding: 5px;
+    color: #D9DAFF;
+    background-color: #100E0E;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    .page {
+        display: flex !important;
+        flex-direction: column !important;
+        width: auto;
+    }
+    .bloc1 {
+        width: auto;
+    }
+    .bloc2{
+        width: auto;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .menuList {
+        font-size: 17px;
+     }
+}
+@media screen and (max-width: 767px) {
+ ul li span {
+    font-size: 12px;
+ }
+ ul li {
+    font-size: 12px;
+ }
+ .menuList {
+    font-size: 15px;
+ }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    ul li span {
+        font-size: 10px;
+     }
+
+}
+
+
+
+@media screen and (max-width: 680px) {
+
+
+}
+@media screen and (max-width: 500px) {
+
 }

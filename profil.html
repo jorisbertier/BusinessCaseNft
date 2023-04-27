@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script defer src="./js/profil.js"></script>
 </head>
 
 <body>
@@ -109,13 +110,13 @@
     </header> -->
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 sidebar ">
+            <div class="col-auto col-xl-2 col-md-2 col-sm-2 sidebar">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
-                    <a href="/" class="d-flex align-items-center my-1 text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline menuProfil">Principale</span>
+
+                        <span class="d-none d-sm-inline menuProfil menuList">Principale</span>
                         <hr>
-                    </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0  align-items-sm-start"
                         id="menu">
                         <li class="nav-item">
                             <a href="#" class="nav-link align-middle px-0">
@@ -128,13 +129,13 @@
                                 <i class="fa-regular fa-envelope-open"></i><span
                                     class="ms-1 d-none d-sm-inline">Message</span> </a>
                         </li>
-                        <span class="fs-5 d-none d-sm-inline my-3">Liste</span>
+                        <span class="d-none d-sm-inline my-3 menuList">Liste</span>
                         <li>
                             <a href="#" class="nav-link px-0 align-middle">
                                 <i class="fa-regular fa-heart"></i><span class="ms-1 d-none d-sm-inline">Mes
                                     favoris</span></a>
                         </li>
-                        <span class="fs-5 d-none d-sm-inline my-3">Compte</span>
+                        <span class="d-none d-sm-inline my-3 menuList">Compte</span>
                         <li>
                             <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                                 <i class="fa-regular fa-user"></i><span
@@ -172,10 +173,12 @@
                     </div>
                 </div>
             </div>
+            <div class="page mx-auto" >
+            <div class="col-xl-4 py-3 mx-auto bloc1">
 
-            <div class="col-4 py-3 mx-auto">
-                <h2>Mon profil</h2>
-                <form class="bg-danger p-5">
+                <form class="blocProfil p-5">
+                    <h2>Détails du profil</h2>
+                    <hr>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Modifier la photo</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -207,35 +210,34 @@
                   </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">A propos de moi</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="profilTextArea">À propos de moi</label>
+                    <textarea class="form-control" id="profilTextArea" rows="3" onkeyup="reste(this.value);" maxlength="250"></textarea><br>
+                    <small><span class="caractereRestant">250 </span>caractères restants</small>
                   </div>
             </div>
         </form>
 
-            <div class="col-4 mx-auto">
-                <h2>Mon profil</h2>
-                <br>
-
-                <form class="bg-danger p-5">
-                <div class="row g-3 align-items-center">
+            <div class="col-xl-4 mx-auto bloc2">
+                <form class="blocProfil p-5">
+                <h2>Changer de mot passe</h2>
+                <hr>
+                <div class="consignePassword">Votre mot de passe doit au moins être<br> de 8 caractères de long,
+                    contenir 1 lettre<br> majuscule, minuscule, un chiffre et ne<br> doit pas contenir d'espace ou d'emoji.
+                </div><br>
+                <div>
                     <label for="inputPassword5" class="form-label">Mot de passe actuel</label>
-                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                    <div id="passwordHelpBlock" class="form-text">
-                      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                    </div><br>
-                  </div>
+                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"><br>
 
-                  <div class="row g-3 align-items-center">
+                <div>
                     <label for="inputPassword5" class="form-label">Nouveau mot de passe</label>
                     <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"><br>
-                  </div>
+                </div>
 
-                  <div class="row g-3 align-items-center">
+                <div>
                     <label for="inputPassword5" class="form-label">Confirmer nouveau mot de passe</label>
                     <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                  </div><br>
-                  <button type="submit" class="btn btn-primary">Primary</button>
+                </div><br>
+                <button type="submit" class="btn btn-primary">Primary</button>
                 </form>
 
                 </div>
@@ -243,6 +245,7 @@
                 
 
             </div>
+            </div><!-- dernier rajouter -->
         </div>
     </div>
     </div>
