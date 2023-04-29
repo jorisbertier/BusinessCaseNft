@@ -3,27 +3,32 @@ let zone2 = document.querySelector('#zone2');
 
 
 let images = [
-    {chemin:"img/allmight.jpg",categorie:"Ombre", nom: "Animal 1", prix:200},
-    {chemin:"img/gojo.jpg",categorie:"Ombre", nom: "Animal 2", prix:200},
-    {chemin:"img/livai.jpg",categorie:"Ombre", nom: "Livai", prix:200},
-    {chemin:"img/mha.jpg",categorie:"Ombre", nom: "Animal 4", prix:200},
+    {chemin:"img/classique/classique1.jpg",categorie:"Classique", nom: "Livai", prix:200},
+    {chemin:"img/classique/classique2.jpg",categorie:"Classique", nom: "Onizuka", prix:200},
+    {chemin:"img/classique/classique3.jpg",categorie:"Classique", nom: "Livai", prix:200},
+    {chemin:"img/classique/classique4.jpg",categorie:"Classique", nom: "Chainsman", prix:200},
 
-    {chemin:"img/naruto/naruto1.jpg",categorie:"naruto", nom: "Pain", prix:300},
-    {chemin:"img/naruto/naruto2.jpg",categorie:"naruto", nom: "Tobi", prix:300},
-    {chemin:"img/naruto/naruto3.jpg",categorie:"naruto", nom: "Deidara", prix:300},
-    {chemin:"img/naruto/naruto4.jpg",categorie:"naruto", nom: "Minato", prix:300},
-    {chemin:"img/naruto/naruto5.jpg",categorie:"naruto", nom: "Kakashi", prix:300},
-    {chemin:"img/naruto/naruto6.jpg",categorie:"naruto", nom: "Pain", prix:300},
-    {chemin:"img/naruto/itachi2.jpg",categorie:"naruto", nom: "Pain", prix:300},
-    {chemin:"img/naruto/naruto7.jpg",categorie:"naruto", nom: "Pain", prix:300},
-    {chemin:"img/naruto/naruto8.jpg",categorie:"naruto", nom: "Pain", prix:300},
+    {chemin:"img/naruto/naruto1.jpg",categorie:"Naruto", nom: "Pain", prix:300},
+    {chemin:"img/naruto/naruto2.jpg",categorie:"Naruto", nom: "Tobi", prix:300},
+    {chemin:"img/naruto/naruto3.jpg",categorie:"Naruto", nom: "Deidara", prix:300},
+    {chemin:"img/naruto/naruto4.jpg",categorie:"Naruto", nom: "Minato", prix:300},
+    {chemin:"img/naruto/naruto5.jpg",categorie:"Naruto", nom: "Kakashi", prix:300},
+    {chemin:"img/naruto/naruto6.jpg",categorie:"Naruto", nom: "Pain", prix:300},
+    {chemin:"img/naruto/itachi2.jpg",categorie:"Naruto", nom: "Itachi", prix:300},
+    {chemin:"img/naruto/naruto7.jpg",categorie:"Naruto", nom: "Madara", prix:300},
+    {chemin:"img/naruto/naruto8.jpg",categorie:"Naruto", nom: "Akatsuki", prix:300},
 
-    {chemin:"img/HunterXHunter/hxh1.jpg",categorie:"paysages", nom: "paysage 1", prix:100},
-    {chemin:"img/HunterXHunter/hxh2.jpg",categorie:"paysages", nom: "paysage 2", prix:100},
-    {chemin:"img/HunterXHunter/hxh3.jpg",categorie:"paysages", nom: "paysage 3", prix:100},
-    {chemin:"img/HunterXHunter/hxh4.jpg",categorie:"paysages", nom: "paysage 4", prix:100},
-    {chemin:"img/HunterXHunter/hxh5.jpg",categorie:"paysages", nom: "paysage 4", prix:100},
-    {chemin:"img/HunterXHunter/hxh6.jpg",categorie:"paysages", nom: "paysage 4", prix:100},
+    {chemin:"img/HunterXHunter/hxh1.jpg",categorie:"HXH", nom: "Duel", prix:100},
+    {chemin:"img/HunterXHunter/hxh2.jpg",categorie:"HXH", nom: "Hisoka", prix:100},
+    {chemin:"img/HunterXHunter/hxh3.jpg",categorie:"HXH", nom: "Neferpitou", prix:100},
+    {chemin:"img/HunterXHunter/hxh4.jpg",categorie:"HXH", nom: "Chrollo", prix:100},
+    {chemin:"img/HunterXHunter/hxh5.jpg",categorie:"HXH", nom: "Meruem", prix:100},
+    {chemin:"img/HunterXHunter/hxh6.jpg",categorie:"HXH", nom: "Gon", prix:100},
+
+    {chemin:"img/Zelda/link1.jpg",categorie:"Link", nom: "Baby Link", prix:100},
+    {chemin:"img/Zelda/link2.jpg",categorie:"Link", nom: "Link", prix:100},
+    {chemin:"img/Zelda/link3.jpg",categorie:"Link", nom: "Ganondorf", prix:100},
+    {chemin:"img/Zelda/link4.jpg",categorie:"Link", nom: "ZBOW", prix:100},
 ];
 
 let i = 0;
@@ -60,7 +65,7 @@ function genererImage(chemin,categorie){
     // insertion dans les balises description
    
     button.innerText = "Ajouter au panier";
-    h3.innerHTML = images[i].nom;
+    h3.innerHTML = images[i].nom + ` <i class="bi bi-patch-check-fill"></i>`;
         div1.innerHTML = `<h6>Floor</h6><p>0.51 ETH</p>`;
         div2.innerHTML = `<h6>Floor</h6><p>0.51 ETH</p>`;
 
