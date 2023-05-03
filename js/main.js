@@ -18,3 +18,26 @@ switchThemeBtn.addEventListener('click', ()=> {
 
 })
 
+
+
+// Creation animation scroll reveal par fleche
+const scroll = document.querySelector(".scrollHigth");
+
+
+scroll.addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  })
+})
+
+window.addEventListener("scroll", function() {
+ 
+  if (window.pageYOffset >= 350) {
+     scroll.style.display = "block";
+     
+  } else {
+     scroll.style.display = "none";
+  }
+});

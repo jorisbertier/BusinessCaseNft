@@ -21,6 +21,12 @@ img {
 nav {
     background-color: black;
     height: 80px;
+    
+}
+
+.navbar input {
+    width: 300px;
+    background-color: #D9DAFF;
 }
 
 .nav-link:hover {
@@ -277,11 +283,11 @@ footer h4 {
 /*ACTUALITE DESKTOP */
 
 #actualite {
-    height: 450px !important;
+    height: 550px !important;
     width: 90% !important;
     border-radius: 30px;
     background-color: #5A3E51;
-    margin-top: 200px;
+    margin-top: 170px;
 }
 
 #actualite p {
@@ -326,9 +332,9 @@ footer h4 {
     justify-content: center;
     color: var(--main-color-purpleLight);
     background-color: var(--main-color-black) !important;
-    opacity: 0.8 !important;
+    opacity: 1 !important;
     font-size: 20px;
-    border-radius: 17px;
+    border-radius: 35px;
     padding: 15px;
     margin: 5px;
     width: 200px;
@@ -339,16 +345,16 @@ footer h4 {
     color: var(--main-color-background);
     background-color: var(--main-color-title) !important;
     font-size: 15px;
-    border-radius: 17px;
+    border-radius: 20px;
     padding: 10px;
     margin: 5px;
     width: 150px;
     transition: 0.5s ease-in-out !important;
-    opacity: 0.8 !important;
+    opacity: 1 !important;
 }
 
 .buttonCategorie:hover, .button1:hover {
-    opacity: 1 !important;
+    opacity: 0.8 !important;
     transition: 600ms;
     
 }
@@ -679,7 +685,10 @@ footer h4 {
     .card2 img {
         height: 200px;
         
-    } 
+    }
+    .scrollHigth {
+        visibility: hidden;
+    }
 
 }
 @media screen and (max-width: 870px) {
@@ -852,4 +861,36 @@ footer h4 {
     .card p {
         font-size: 10px;
     }
+}
+
+/* ANIMATION SCROLL VREVEAL EN BAS VERS LE HAUT */
+.scrollHigth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 50%;
+    display:none;
+
+}
+
+.scrollHigth i {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    font-size: 20px;
+    right: 19px;
+    bottom: 28px;
+    
 }

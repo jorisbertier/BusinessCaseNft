@@ -109,15 +109,26 @@
         </div>
     </header>
 
-    <div class="test">
+    <div class="test container d-flex w-100">
+        <div class="col-6">
         <div>Collection</div>
-        <select name="" id="filtre" onchange="majFiltre(this)">
-            <option value="spaceElement">Tout afficher</option>
-            <option value="Clasique">Ombre</option>
-            <option value="Naruto">Naruto</option>
-            <option value="Link">Zelda</option>
-            <option value="HXH">HxH</option>
-        </select>
+            <select name="" id="filtre" onchange="majFiltre(this)">
+                <option value="spaceElement">Tout afficher</option>
+                <option value="Classique">Classique</option>
+                <option value="Naruto">Naruto</option>
+                <option value="Link">Zelda</option>
+                <option value="HXH">HxH</option>
+            </select>
+        </div>
+        
+        <div class="col-6">
+            <div>Trier</div>
+            <select name="" id="filtreParOrdre" onchange="filtreOrdre(this)">
+                <option value="Croissant">Trier par ordre croissant</option>
+                <option value="Decroissant">Trier par ordre décroissant</option>
+                <option value="Date">Nouveautés</option>
+            </select>
+        </div>
     </div>
     <!-- <div id="zone1">
             
