@@ -41,3 +41,29 @@ window.addEventListener("scroll", function() {
      scroll.style.display = "none";
   }
 });
+
+//Creation carousel click
+
+let changeImg = document.querySelector('.changeImg img');
+let changeTitle = document.querySelector('.changeTitle');
+let changeTitle2 = document.querySelector('.changeTitle2');
+let changeText= document.querySelector('.changeText');
+let fleche = document.querySelector('.changeFleche');
+
+let currentImage = 1;
+
+fleche.addEventListener('click', function() {
+  if (currentImage === 1) {
+    changeImg.src = "./img/Jujustu/jujustu2.jpg";
+    changeTitle.innerHTML = "Jujustu Collection";
+    changeTitle2.innerHTML = "Tkt";
+    changeText.innerHTML = `Nouveau texte tkt<br> lopem djdks skdnd,d `;
+    currentImage = 2;
+  } else {
+    changeImg.src = "./img/hisoka.jpg";
+    changeTitle.innerHTML = "MINTING NOW";
+    changeTitle2.innerHTML = "ANON KATZ";
+    changeText.innerHTML = "bt profilverifie on etherum<br>A curious group of znon katz";
+    currentImage = 1;
+  }
+});
