@@ -48,22 +48,42 @@ let changeImg = document.querySelector('.changeImg img');
 let changeTitle = document.querySelector('.changeTitle');
 let changeTitle2 = document.querySelector('.changeTitle2');
 let changeText= document.querySelector('.changeText');
-let fleche = document.querySelector('.changeFleche');
+let gif= document.querySelector('.gif');
+let point1 = document.querySelector('.point1');
+let point2 = document.querySelector('.point2');
+let point3 = document.querySelector('.point3');
 
-let currentImage = 1;
 
-fleche.addEventListener('click', function() {
-  if (currentImage === 1) {
-    changeImg.src = "./img/Jujustu/jujustu2.jpg";
-    changeTitle.innerHTML = "Jujustu Collection";
-    changeTitle2.innerHTML = "Tkt";
-    changeText.innerHTML = `Nouveau texte tkt<br> lopem djdks skdnd,d `;
-    currentImage = 2;
-  } else {
-    changeImg.src = "./img/hisoka.jpg";
+point1.addEventListener('click', function() {
+
+    changeImg.src = "./img/profil/itachi2.png";
     changeTitle.innerHTML = "MINTING NOW";
     changeTitle2.innerHTML = "ANON KATZ";
     changeText.innerHTML = "bt profilverifie on etherum<br>A curious group of znon katz";
-    currentImage = 1;
-  }
-});
+    point1.style.backgroundColor = "black";
+    point2.style.backgroundColor = "rgba(255,255,255, 0.3)";
+    point3.style.backgroundColor = "rgba(255,255,255, 0.3)";
+    gif.src = "./img/profil/naruto.gif";
+})
+
+point2.addEventListener('click', function() {
+  changeImg.src = "./img/profil/hisokamini.png";
+  changeTitle.innerHTML = "Jujustu Collection";
+  changeTitle2.innerHTML = "LOREM";
+  changeText.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua`;
+  point2.style.backgroundColor = "black";
+  point1.style.backgroundColor = "rgba(255,255,255, 0.3)";
+  point3.style.backgroundColor = "rgba(255,255,255, 0.3)";
+  gif.src = "./img/profil/hisoka.webp";
+})
+
+point3.addEventListener('click', function() {
+  changeImg.src = "./img/profil/ichigo.png";
+  changeTitle.innerHTML = "Jujustu Collection";
+  changeTitle2.innerHTML = "Tkt";
+  changeText.innerHTML = `Nouveau texte tkt<br> lopem djdks skdnd,d `;
+  point3.style.backgroundColor = "black";
+  point1.style.backgroundColor = "rgba(255,255,255, 0.3)";
+  point2.style.backgroundColor = "rgba(255,255,255, 0.3)";
+  gif.src = "./img/profil/scissorseven.webp";
+})

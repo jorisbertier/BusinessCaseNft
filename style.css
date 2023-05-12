@@ -253,7 +253,7 @@ table tr:hover {
 
 footer {
     border-top: 1px solid var(--main-color-purpleLight);
-    margin-top: 300px;
+    margin-top: 75px;
     background-color: var(--main-color-black);
     color:var(--main-color-purpleLight);
     
@@ -274,8 +274,12 @@ footer p:hover, footer i:hover, footer h2:hover {
 
 footer i {
     font-size: 20px !important;
+    
 }
-
+footer .aPropos{
+    text-decoration: none;
+    color: var(--main-color-purpleLight);
+}
 footer h4 {
     font-size: 20px !important;
 }
@@ -895,10 +899,13 @@ footer h4 {
     
 }
 
-/* NEW TEST */
+/* CAROUSEL */
 
 .changeImg img {
     border-radius: 30px;
+    height: 350px;
+    max-width: 350px;
+    object-fit: cover;
   }
 
 .changeImg img:active {
@@ -913,16 +920,31 @@ footer h4 {
     height: 12px;
     border-radius: 50%;
     margin: 10px;
+    cursor: pointer;
 }
 
 .gif {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .user {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+#actualite2 {
+    height: 550px !important;
+    width: 90% !important;
+    border-radius: 30px;
+    background-color: #5A3E51;
+    margin-top: 170px;
+}
+
+.changeText {
+    color: #d0d1fb;
+    font-weight: 400;
 }
