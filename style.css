@@ -348,19 +348,22 @@ footer h4 {
 .buttonCategorie {
     color: var(--main-color-background);
     background-color: var(--main-color-title) !important;
+    border: 1px solid black;
     font-size: 15px;
     border-radius: 20px;
     padding: 10px;
     margin: 5px;
     width: 150px;
     transition: 0.5s ease-in-out !important;
-    opacity: 1 !important;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, var(--main-color-title) 50%, var(--main-color-purple) 50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .buttonCategorie:hover, .button1:hover {
-    opacity: 0.8 !important;
-    transition: 600ms;
-    
+    background-position: -100% 0;
+    transition: all 0.3s ease;
+    color: #d0d1fb;
 }
 
 
@@ -404,7 +407,6 @@ footer h4 {
 }
 
 .card1 {
-    
     border-color: black;
     border-radius: 55px;
     border-style: solid;
@@ -415,6 +417,7 @@ footer h4 {
     border-radius: 30px!important;
     font-size: 10px !important;
     overflow-y: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card1 img {
@@ -436,15 +439,16 @@ footer h4 {
 
 .card:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: translateY(-0.75em);
     transition: 500ms;
-    border: 1px solid;
+
 }
 
 /*CARD ARTICLE*/
 
 .card2 {
     border-radius: 30px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card2 img {
@@ -907,10 +911,10 @@ footer h4 {
     max-width: 350px;
     object-fit: cover;
   }
-
-.changeImg img:active {
-    transform: scale(2.8);
+.changeTitle i {
+    font-size: 30px;
 }
+
 .buttonSlider {
     display: flex;
     flex-direction: row;
@@ -948,3 +952,29 @@ footer h4 {
     color: #d0d1fb;
     font-weight: 400;
 }
+
+.nomCollection {
+    color: var(--main-color-purpleLight);
+    font-size: 25px;
+}
+/* TIMER */
+
+.timer {
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--main-color-purpleLight);
+}
+
+.swiper {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }

@@ -59,7 +59,7 @@ point1.addEventListener('click', function() {
     changeImg.src = "./img/profil/itachi2.png";
     changeTitle.innerHTML = "MINTING NOW";
     changeTitle2.innerHTML = "ANON KATZ";
-    changeText.innerHTML = "bt profilverifie on etherum<br>A curious group of znon katz";
+    changeText.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua";
     point1.style.backgroundColor = "black";
     point2.style.backgroundColor = "rgba(255,255,255, 0.3)";
     point3.style.backgroundColor = "rgba(255,255,255, 0.3)";
@@ -87,3 +87,27 @@ point3.addEventListener('click', function() {
   point2.style.backgroundColor = "rgba(255,255,255, 0.3)";
   gif.src = "./img/profil/scissorseven.webp";
 })
+
+//timer
+
+const timer = document.querySelector('.timer');
+let temp = 100000;
+
+
+function compteur() {
+
+  let secondes = parseInt(temp % 60, 10);
+  let minutes = parseInt((temp / 60) % 60, 10);
+  let heures = parseInt((temp / 3600) % 24, 10);
+  let jours = parseInt(temp / (3600 * 24), 10);
+
+
+  secondes = secondes < 10 ? "0"+ secondes : secondes;
+  minutes = minutes < 10 ? "0"+ minutes : minutes;
+
+  timer.innerText = "Temps restant "+ jours + " jours " + heures+ " heures " +minutes + " minutes " +secondes+ " secondes";
+  temp--; 
+}
+
+setInterval(compteur, 1000);
+
