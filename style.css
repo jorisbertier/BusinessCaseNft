@@ -294,14 +294,23 @@ footer h4 {
     margin-top: 170px;
 }
 
+.carousel-indicators button {
+    width: 75px !important;
+    background-color: grey !important;
+    color: red !important;
+    bottom: 100px !important;
+}
+
+
 #actualite p {
     font-size: 15px;
     color: grey;
 }
 
 .imgActu1 {
-    
+    height: 250px !important;
     border-radius: 30px;
+    max-width: 250px;
 }
 
 
@@ -379,6 +388,7 @@ footer h4 {
 .carouselExampleCaptions {
     height: 100px;
 }
+
 
 .carou {
     display: flex;
@@ -506,6 +516,33 @@ footer h4 {
     content: 'MANGA';
     animation: text 10s ease-out infinite;
 }
+
+/* ARTICLE VENTE EN COURS */
+
+.vente img{
+    filter: brightness(30%)
+}
+.vente span {
+    background-color: black;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.buttonInside button {
+    background-color: #5A3E51;
+    border: none;
+}
+
+.buttonVente {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.vente i {
+    font-size: 20px;
+}
+
 
 /* CONTENU CACHEE DESKTOP & TABLET */
 
@@ -925,7 +962,9 @@ footer h4 {
     border-radius: 50%;
     margin: 10px;
     cursor: pointer;
+    
 }
+
 
 .gif {
     width: 60px;

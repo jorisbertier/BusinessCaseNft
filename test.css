@@ -1,0 +1,20 @@
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.cont {
+    width: 400px !important;
+}
+
+
+button {
+    width: 75px !important;
+    background-color: grey !important;
+    color: red !important;
+    bottom: 100px !important;
+}
+
+#carouselExampleFades {
+    height: 200px;
+}
